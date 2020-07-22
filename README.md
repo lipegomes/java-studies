@@ -8,6 +8,7 @@ This repository is for me to date my studies on basic java, guiding me through *
 
 - Visual Studio Code
 - Intellij Idea Community 
+- Typora
 
 ### Tools:
 
@@ -31,3 +32,4 @@ Este repositório é para eu datar meus estudos sobre java básico me orientando
 
 - Terminal Linux
 - Bash
+- 
