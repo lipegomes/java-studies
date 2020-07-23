@@ -14,6 +14,7 @@ https://loiane.training/curso/java-basico
 
 - Terminal Linux
 - Bash
+- Git
 
 ------
 
@@ -33,3 +34,4 @@ https://loiane.training/curso/java-basico
 
 - Terminal Linux
 - Bash
+- Git
