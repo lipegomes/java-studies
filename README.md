@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/lipegomes/https://githubcom/lipegomes/basic-java-studies.svg)](http://hits.dwyl.com/lipegomes/https://githubcom/lipegomes/basic-java-studies)
+
 # Basic Java Studies	
 
 This repository is for me to date my studies on basic java, guiding me through **Instructor Loiane Groner** classes on the site:
