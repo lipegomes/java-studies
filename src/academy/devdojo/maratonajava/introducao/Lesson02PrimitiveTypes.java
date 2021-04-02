@@ -13,6 +13,8 @@ public class Lesson02PrimitiveTypes {
         boolean older = true;
         boolean minor = false;
         char character = '\u0220';
+        String phrase = "My name is";
+        String name = "Monkey D. Luffy";
 
         System.out.println("Minimum Driving Age is " + minimumDrivingAge + " years old!");
         System.out.println(castNumber);
@@ -24,5 +26,6 @@ public class Lesson02PrimitiveTypes {
         System.out.println(older);
         System.out.println(minor);
         System.out.println(character);
+        System.out.println(phrase + " " + name);
     }
 }
