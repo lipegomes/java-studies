@@ -1,29 +1,9 @@
-# Basic Java Studies	
+# Java Studies - Maratona Java Virado No Jiraya
 
-This repository is for me to date my studies on basic java.
+This repository is for me to date my studies on java during [Maratona Java Virado No Jiraya](https://www.youtube.com/watch?v=JasmdiTyduI&list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW).
 
-###  Programs Used:
+## Tools used:
 
-- Intellij Idea Community
+- [Intellij Idea](https://www.jetbrains.com/idea/)
+- [Git](https://git-scm.com/)
 
-### Tools:
-
-- Terminal Linux
-- Bash
-- Git
-
-------
-
-# Estudos sobre Java básico
-
-Este repositório é para eu datar meus estudos sobre java básico.
-
-### Programas Utilizados:
-
-- Intellij Idea Community
-
-### Ferramentas:
-
-- Terminal Linux
-- Bash
-- Git
