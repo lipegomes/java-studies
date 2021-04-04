@@ -24,7 +24,5 @@ public class StudentTest02 {
         System.out.println(student2.name);
         System.out.println(student2.age);
         System.out.println(student2.gender);
-
-
     }
 }
