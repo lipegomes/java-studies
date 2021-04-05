@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain;
 
-public class Calculator {
+public class Calculator01 {
     public void sumNumbers() {
         System.out.println(2 + 2);
     }
