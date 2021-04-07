@@ -16,7 +16,6 @@ public class AnimeTest01 {
         anime04.init("Hunter x Hunter", "TV", "Animation / Action / Adventure", 148);
         anime05.init("Steins;Gate 0", "Crunchyroll", "Animation / Drama / Mystery", 24);
 
-
         anime01.prints();
         anime02.prints();
         anime03.prints();
