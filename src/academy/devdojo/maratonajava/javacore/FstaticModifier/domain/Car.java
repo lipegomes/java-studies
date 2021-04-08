@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.FstaticModifier.domain;
 public class Car {
     private String brand;
     private double maximumSpeed;
-    public static double limitSpeed = 250;
+    private static double limitSpeed = 250;
 
     public Car(String brand, double maximumSpeed) {
         this.brand = brand;
@@ -31,5 +31,13 @@ public class Car {
 
     public void setMaximumSpeed(double maximumSpeed) {
         this.maximumSpeed = maximumSpeed;
+    }
+
+    public static double getLimitSpeed() {
+        return limitSpeed;
+    }
+
+    public static void setLimitSpeed(double limitSpeed) {
+        Car.limitSpeed = limitSpeed;
     }
 }
