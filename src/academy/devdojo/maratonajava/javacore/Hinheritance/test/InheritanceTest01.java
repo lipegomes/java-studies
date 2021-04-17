@@ -23,5 +23,6 @@ public class InheritanceTest01 {
         employee.setAddress(address);
         employee.setSalary(12000);
         employee.prints();
+        employee.paymentReport();
     }
 }

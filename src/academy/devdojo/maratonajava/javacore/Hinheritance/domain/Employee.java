@@ -8,6 +8,10 @@ public class Employee extends Person {
         System.out.println("Salary: $" + this.salary);
     }
 
+    public void paymentReport() {
+        System.out.println("I " + this.name + ", received the salary in the amount of " + this.salary);
+    }
+
     public double getSalary() {
         return salary;
     }
