@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Hinheritance.domain;
 
 public class Person {
-    private String name;
-    private String id;
-    private Address address;
+    protected String name;
+    protected String id;
+    protected Address address;
 
     public void prints() {
         System.out.println("Name: " + this.name);
