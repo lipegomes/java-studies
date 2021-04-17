@@ -21,6 +21,7 @@ public class InheritanceTest01 {
         employee.setName("Jackie Chan");
         employee.setId("CH01P304");
         employee.setAddress(address);
+        employee.setSalary(12000);
         employee.prints();
     }
 }
