@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain;
+package academy.devdojo.maratonajava.javacore.Bintroductionmethods.domain;
 
-public class Calculator05 {
+public class Calculator04 {
     public void sumNumbers(int num1, int num2) {
         System.out.println(num1 + num2);
     }
@@ -27,21 +27,5 @@ public class Calculator05 {
         System.out.println("Change Numbers: ");
         System.out.println("Num1 change to: " + num1);
         System.out.println("Num2 change to: " + num2);
-    }
-
-    public void sumArray(int[] numbers) {
-        int sum = 0;
-        for (int num : numbers) {
-            sum += num;
-        }
-        System.out.println(sum);
-    }
-
-    public void sumVarArgs(int... numbers) {
-        int sum = 0;
-        for (int num : numbers) {
-            sum += num;
-        }
-        System.out.println(sum);
     }
 }

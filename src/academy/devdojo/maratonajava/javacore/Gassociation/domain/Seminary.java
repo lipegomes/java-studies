@@ -5,13 +5,9 @@ public class Seminary {
     private Student[] students;
     private Local local;
 
-    public Seminary(String title) {
+    public Seminary(String title, Local local) {
         this.title = title;
-    }
-
-    public Seminary(String title, Student[] students) {
-        this.title = title;
-        this.students = students;
+        this.local = local;
     }
 
     public Seminary(String title, Student[] students, Local local) {
