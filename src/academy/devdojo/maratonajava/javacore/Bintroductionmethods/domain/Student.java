@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain;
+package academy.devdojo.maratonajava.javacore.Bintroductionmethods.domain;
 
 public class Student {
     public String name;
