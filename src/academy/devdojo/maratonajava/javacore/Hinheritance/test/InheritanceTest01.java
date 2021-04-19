@@ -9,16 +9,14 @@ public class InheritanceTest01 {
         Address address = new Address();
         address.setStreet("Lincoln Avenue 44");
         address.setPostalCode("21302-1515");
-        Person person = new Person();
-        person.setName("Hanna Barbera");
+        Person person = new Person("Hanna Barbera");
         person.setId("013744623");
         person.setAddress(address);
         person.prints();
 
         System.out.println();
 
-        Employee employee = new Employee();
-        employee.setName("Jackie Chan");
+        Employee employee = new Employee("Jackie Chan");
         employee.setId("CH01P304");
         employee.setAddress(address);
         employee.setSalary(12000);

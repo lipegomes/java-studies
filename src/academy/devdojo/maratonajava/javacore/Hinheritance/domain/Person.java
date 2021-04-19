@@ -5,6 +5,15 @@ public class Person {
     protected String id;
     protected Address address;
 
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person(String name, String id) {
+        this(name);
+        this.id = id;
+    }
+
     public void prints() {
         System.out.println("Name: " + this.name);
         System.out.println("Id: " + this.id);
