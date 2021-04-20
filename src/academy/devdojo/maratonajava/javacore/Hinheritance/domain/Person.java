@@ -5,13 +5,21 @@ public class Person {
     protected String id;
     protected Address address;
 
-    public Person(String name) {
-        this.name = name;
+    static {
+        System.out.println("Inside static person block");
     }
 
-    public Person(String name, String id) {
-        this(name);
-        this.id = id;
+    {
+        System.out.println("Inside non-static person block 1");
+    }
+
+    {
+        System.out.println("Inside non-static person block 2");
+    }
+
+    public Person(String name) {
+        System.out.println("Inside person constructor");
+        this.name = name;
     }
 
     public void prints() {

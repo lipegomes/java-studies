@@ -10,6 +10,7 @@ public class InheritanceTest01 {
         address.setStreet("Lincoln Avenue 44");
         address.setPostalCode("21302-1515");
         Person person = new Person("Hanna Barbera");
+//        person.setName();
         person.setId("013744623");
         person.setAddress(address);
         person.prints();
@@ -17,6 +18,7 @@ public class InheritanceTest01 {
         System.out.println();
 
         Employee employee = new Employee("Jackie Chan");
+//        employee.setName();
         employee.setId("CH01P304");
         employee.setAddress(address);
         employee.setSalary(12000);
