@@ -1,10 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Kenums.domain;
 
 public class Customer02 {
-    public enum PaymentType {
-        CREDIT, DEBIT
-    }
-
     private String name;
     private CustomerType customerType;
     private PaymentType paymentType;
