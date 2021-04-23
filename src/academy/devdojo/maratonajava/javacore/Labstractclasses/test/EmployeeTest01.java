@@ -9,9 +9,15 @@ public class EmployeeTest01 {
         SoftwareEngineer softwareEngineer1 = new SoftwareEngineer("Scott", 12000);
         SoftwareEngineer softwareEngineer2 = new SoftwareEngineer("Petter", 9000);
         SoftwareEngineer softwareEngineer3 = new SoftwareEngineer("Gracie", 12000);
+
         System.out.println(manager);
         System.out.println(softwareEngineer1);
         System.out.println(softwareEngineer2);
         System.out.println(softwareEngineer3);
+
+        manager.prints();
+        softwareEngineer1.prints();
+        softwareEngineer2.prints();
+        softwareEngineer3.prints();
     }
 }
