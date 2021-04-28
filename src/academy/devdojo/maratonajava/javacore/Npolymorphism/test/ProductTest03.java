@@ -11,7 +11,9 @@ public class ProductTest03 {
         Product product1 = new Sneakers("Air Jordan 1 Women's High OG (Silver Toe)", 279.99);
         Product product2 = new Sneakers("Hi-Tec Trail Blazer Mid Wp", 99.99);
         Product product3 = new Computer("ROG Zephyrus S Thin and Portable Gaming laptop", 1899.99);
+
         Avocado avocado = new Avocado("Type Simmons", 4.43);
+        avocado.setExpirationDate("04/05/2021");
 
         TaxCalculator.calculateTax(product1);
 
