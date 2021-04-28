@@ -9,7 +9,7 @@ public class Computer extends Product {
 
     @Override
     public double calculateTax() {
-        System.out.println("Calculating avocado tax");
+        System.out.println("Calculating computer tax");
         return this.price * PERCENT_TAX;
     }
 
