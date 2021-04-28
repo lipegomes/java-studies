@@ -40,5 +40,9 @@ public class TaxCalculator {
         System.out.println("Price: $" + product.getPrice());
         System.out.println("Tax paid: $" + tax);
         System.out.println("Total: $" + (product.getPrice() + tax));
+        if (product instanceof Avocado) {
+            Avocado avocado = (Avocado) product;
+            System.out.println("Expiration date: " + avocado.getExpirationDate());
+        }
     }
 }
