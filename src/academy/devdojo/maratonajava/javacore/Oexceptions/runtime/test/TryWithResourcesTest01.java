@@ -10,6 +10,7 @@ public class TryWithResourcesTest01 {
         readFile();
     }
 
+    // Read file and handle exceptions
     public static void readFile() {
         try (Reader1 reader1 = new Reader1();
              Reader2 reader2 = new Reader2()) {
