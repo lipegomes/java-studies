@@ -15,7 +15,7 @@ public class StringPerformanceTest {
         long start3 = System.currentTimeMillis();
         concatStringBuffer(50_000);
         long end3 = System.currentTimeMillis();
-        System.out.println("Time concatStringBuilder: " + (end3 - start3) + "ms" );
+        System.out.println("Time concatStringBuffer: " + (end3 - start3) + "ms" );
     }
 
     private static void concatString(int size) {
