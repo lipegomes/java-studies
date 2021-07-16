@@ -19,56 +19,34 @@ public class StringPerformanceTest {
     }
 
     private static void concatString(int size) {
-        String text = "**** Sabaton - Defence of Moscow ****" +
+        String text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium" +
+                "totam rem aperiam, eaque ipsa quae ab illo inventore veritatis" +
+                " et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit " +
+                "aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quis.\n" +
                 "\n" +
+                "Ur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." +
+                "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non" +
+                "numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima" +
+                "veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?" +
+                "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui" +
+                "dolorem eum fugiat quo voluptas nulla pariatur?\n" +
                 "\n" +
-                "As the Wehrmacht overrun, Russia 1941\n" +
-                "They don't belong, we stand our ground, a million strong\n" +
+                "Omnis iste natus et fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." +
+                "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non" +
+                "numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam," +
+                "quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem" +
+                "" +
+                "vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eu" +
+                "fugiat quo voluptas nulla pariatur?\n" +
                 "\n" +
-                "We are ready for their strike, face the army of the reich\n" +
-                "A million strong, this is our land, they don't belong\n" +
-                "\n" +
-                "Hear Marshal Zhukov's, and Stalin's orders\n" +
-                "Defend the motherland\n" +
-                "Moscow shall not fall\n" +
-                "\n" +
-                "Stand and follow command, our blood for the homeland\n" +
-                "Heed the motherland's call, and brace for the storm\n" +
-                "Moscow will never give in, there is no surrender\n" +
-                "Force them into retreat, and into defeat\n" +
-                "\n" +
-                "Face the volleys of their guns\n" +
-                "For Russia's daughters and her sons\n" +
-                "All the brave, who stand against the typhoon wave\n" +
-                "\n" +
-                "From the mountains and the plains\n" +
-                "Come in thousands on the trains\n" +
-                "Day and night, they're rolling in, to join the fight\n" +
-                "\n" +
-                "From Kazakhstan to Magadan\n" +
-                "Call of the motherland\n" +
-                "Russia shall prevail\n" +
-                "\n" +
-                "Stand and follow command, our blood for the homeland\n" +
-                "Heed the motherland's call, and brace for the storm\n" +
-                "Moscow will never give in, there is no surrender\n" +
-                "Force them into retreat, and into defeat\n" +
-                "\n" +
-                "Stand and follow command, our blood for the homeland\n" +
-                "Heed the motherland's call, and brace for the storm\n" +
-                "Moscow will never give in, there is no surrender\n" +
-                "Force them into retreat, and into defeat\n" +
-                "\n" +
-                "Stand and follow command, our blood for the homeland\n" +
-                "Heed the motherland's call, and brace for the storm\n" +
-                "Moscow will never give in, there is no surrender\n" +
-                "Force them into retreat, and into defeat\n" +
-                "\n" +
-                "Stand and follow command, our blood for the homeland\n" +
-                "\n"+
-                "Source: LyricFind" +
-                "\n"
-                ;
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam" +
+                "rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." +
+                "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores" +
+                "eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit" +
+                "amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolor" +
+                "magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis" +
+                "suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit" +
+                "qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? ";
 
         for (int i = 0; i < size; i++) {
             text +=i;
