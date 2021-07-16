@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Gassociation.domain;
 public class Local {
     private String address;
 
-    public Local(String address) {
+    public Local(String deu, String address) {
         this.address = address;
     }
 

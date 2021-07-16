@@ -7,7 +7,7 @@ import academy.devdojo.maratonajava.javacore.Gassociation.domain.Teacher;
 
 public class AssociationTest {
     public static void main(String[] args) {
-        Local local = new Local("Bake Cook street");
+        Local local = new Local("deu", "Bake Cook street");
         Student student1 = new Student("Margareth Owen", 19);
         Student student2 = new Student("Kate Johanssen", 20);
         Teacher teacher = new Teacher("Alberto Fernandez", "Macro and micronutrients");
