@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.Vio.test;
+package academy.devdojo.maratonajava.javacore.test;
 
 import java.io.File;
 
