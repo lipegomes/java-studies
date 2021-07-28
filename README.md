@@ -6,7 +6,8 @@ This repository is for me to date my studies on java during [Maratona Java Virad
 
 /home/filipe/mydocs/dev/devdojo/basic-java-studies/assets/img/Java-Collection-Framework-Hierarchy-2-874x1024.jpg
 
-![Java-Collection-Framework-Hierarchy-2-874x1024.jpg](https://github.com/lipegomes/java-studies/blob/main/assets/img/Java-Collection-Framework-Hierarchy-2-874x1024.jpg)
+![Java-Collection-Framework-Hierarchy-2-874x1024.jpg](https://github.com/lipegomes/java-studies/blob/master/assets/img/Java-Collection-Framework-Hierarchy-2-874x1024.jpg)
+
 Source: [link](https://vidvaan.com/wp-content/uploads/2020/11/Java-Collection-Framework-Hierarchy-2-874x1024.jpg)
 
 ### References:
