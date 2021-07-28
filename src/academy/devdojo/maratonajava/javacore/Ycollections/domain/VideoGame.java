@@ -30,6 +30,15 @@ public class VideoGame {
         return brand != null && brand.equals(videoGame.brand);
     }
 
+    // se x.equals(y) == true, y.hashCode() == x.hashCode()
+    // y.hashCode() == x.hashCode() não necessariamente o equals de y.equals(x) tem que ser true
+    // x.equals(y) == false
+    // y.hashCode() != x.hashCode() x.equals(y) deverá ser false.
+    @Override
+    public int hashCode() {
+        return brand == null ? 0 : this.brand.hashCode();
+    }
+
     public String getBrand() {
         return brand;
     }
