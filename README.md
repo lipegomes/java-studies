@@ -36,7 +36,6 @@ Source: [link](https://www.bigocheatsheet.com/)
 - [Introduction to Big O Notation and Time Complexity](https://www.youtube.com/watch?v=D6xkbGLQesk)
 - [Data Structures and Algorithms](https://www.youtube.com/watch?v=bum_19loj9A&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H)
 
-
 ## Tools used:
 
 - [Intellij Idea](https://www.jetbrains.com/idea/)
