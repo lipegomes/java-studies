@@ -30,7 +30,7 @@ Source: [link](https://www.bigocheatsheet.com/)
 
 ### References:
 
-- [Big O Notation](https://www.freecodecamp.org/news/all-you-need-to-know-about-big-o-notation-to-crack-your-next-coding-interview-9d575e7eec4/)
+- [Big O notation coding interview](https://www.freecodecamp.org/news/all-you-need-to-know-about-big-o-notation-to-crack-your-next-coding-interview-9d575e7eec4/)
 - [Big O: How Code Slows as Data Grows](https://www.youtube.com/watch?v=Ee0HzlnIYWQ&pp=ugMICgJwdBABGAE%3D)
 - [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&pp=ugMICgJwdBABGAE%3D)
 - [Introduction to Big O Notation and Time Complexity](https://www.youtube.com/watch?v=D6xkbGLQesk)
