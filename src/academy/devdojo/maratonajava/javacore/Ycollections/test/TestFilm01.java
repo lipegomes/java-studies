@@ -4,7 +4,16 @@ import academy.devdojo.maratonajava.javacore.Ycollections.domain.Film;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class FilmIdComparator implements Comparator<Film> {
+
+    @Override
+    public int compare(Film film1, Film film2) {
+        return film1.getId().compareTo(film2.getId());
+    }
+}
 
 public class TestFilm01 {
     public static void main(String[] args) {
@@ -25,6 +34,14 @@ public class TestFilm01 {
 
         Collections.sort(films);
         System.out.println("--- Ordenado por sort em ordem númerica ---");
+        for (Film film : films) {
+            System.out.println(film);
+        }
+
+        System.out.println();
+
+        Collections.sort(films, new FilmIdComparator());
+        System.out.println("--- Ordenado usando comparator via Id ---");
         for (Film film : films) {
             System.out.println(film);
         }
