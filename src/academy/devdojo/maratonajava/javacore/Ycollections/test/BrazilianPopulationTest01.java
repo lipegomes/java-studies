@@ -1,10 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Ycollections.test;
 
 import academy.devdojo.maratonajava.javacore.Ycollections.domain.BrazilianPopulation;
-import academy.devdojo.maratonajava.javacore.Ycollections.domain.Film;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
