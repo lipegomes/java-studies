@@ -9,6 +9,8 @@ public class Film implements Comparable<Film>{
     private int release_year;
     private String genre;
     private int minutes;
+    private Long votes;
+    private float gross;
 
     public Film(Long id, String name, float rate, int release_year, String genre, int minutes) {
         Objects.requireNonNull(id, "Id não pode ser nulo");
@@ -22,28 +24,36 @@ public class Film implements Comparable<Film>{
         this.minutes = minutes;
     }
 
+    public Film(Long id, String name, float rate, int release_year, String genre, int minutes, Long votes, float gross) {
+        this(id, name, rate, release_year, genre, minutes);
+        this.votes = votes;
+        this.gross = gross;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Film films = (Film) o;
-        return Float.compare(films.rate, rate) == 0 && release_year == films.release_year && minutes == films.minutes && id.equals(films.id) && name.equals(films.name) && genre.equals(films.genre);
+        Film film = (Film) o;
+        return Float.compare(film.rate, rate) == 0 && release_year == film.release_year && minutes == film.minutes && Float.compare(film.gross, gross) == 0 && id.equals(film.id) && name.equals(film.name) && Objects.equals(genre, film.genre) && Objects.equals(votes, film.votes);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, rate, release_year, genre, minutes);
+        return Objects.hash(id, name, rate, release_year, genre, minutes, votes, gross);
     }
 
     @Override
     public String toString() {
-        return "Films{" +
+        return "Film{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", rate=" + rate +
                 ", release_year=" + release_year +
                 ", genre='" + genre + '\'' +
                 ", minutes=" + minutes +
+                ", votes=" + votes +
+                ", gross=" + gross +
                 '}';
     }
 
@@ -95,17 +105,33 @@ public class Film implements Comparable<Film>{
         this.minutes = minutes;
     }
 
+    public Long getVotes() {
+        return votes;
+    }
+
+    public void setVotes(Long votes) {
+        this.votes = votes;
+    }
+
+    public float getGross() {
+        return gross;
+    }
+
+    public void setGross(float gross) {
+        this.gross = gross;
+    }
+
     @Override
-    public int compareTo(Film o) {
-        // retorna negativo se o this < o
-        if (this.id < o.getId()) {
+    public int compareTo(Film film) {
+        // retorna negativo se o this < film
+        if (this.id < film.getId()) {
             return -1;
         }
-        // retorna 0 se this é == o
-        else if (this.id.equals(o.getId())) {
+        // retorna 0 se this é == film
+        else if (this.id.equals(film.getId())) {
             return 0;
         }
-        // retorna positivo se this > o
+        // retorna positivo se this > film
         else {
             return +1;
         }
