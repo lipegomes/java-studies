@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Ycollections.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestList01 {
+public class ListTest01 {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>(10);
         names.add("Sergei");

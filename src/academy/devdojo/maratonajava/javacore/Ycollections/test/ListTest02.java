@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class TestList02 {
+public class ListTest02 {
     public static void main(String[] args) {
         // cria um objeto scanner chamado game
         Scanner game = new Scanner(System.in);

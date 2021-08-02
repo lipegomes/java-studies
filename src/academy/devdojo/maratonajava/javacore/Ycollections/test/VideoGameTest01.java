@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.Ycollections.test;
 
 import academy.devdojo.maratonajava.javacore.Ycollections.domain.VideoGame;
 
-public class TestVideoGame01 {
+public class VideoGameTest01 {
     public static void main(String[] args) {
         VideoGame xboxSeriesS = new VideoGame(
                 "Microsoft",
