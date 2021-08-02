@@ -15,7 +15,7 @@ class FilmIdComparator implements Comparator<Film> {
     }
 }
 
-public class TestFilm01 {
+public class FilmTest01 {
     public static void main(String[] args) {
         List<Film> films = new ArrayList<>();
         films.add(new Film(1L, "The Godfather", 9.2f,1972, "Crime, Drama", 175));
