@@ -1,5 +1,8 @@
 # Java Studies
 
+- [Java Studies](https://github.com/lipegomes/java-studies/tree/master/maratona-java)
+- [Object Oriented](https://github.com/lipegomes/java-studies/tree/master/object-oriented)
+
 ## Collection framework in java
 
 ![Java-Collection-Framework-Hierarchy-2-874x1024.jpg](https://github.com/lipegomes/java-studies/blob/master/assets/img/Java-Collection-Framework-Hierarchy-2-874x1024.jpg)
