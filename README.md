@@ -1,6 +1,4 @@
-# Java Studies - Maratona Java Virado No Jiraya
-
-This repository is for me to date my studies on java during [Maratona Java Virado No Jiraya](https://www.youtube.com/watch?v=JasmdiTyduI&list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW).
+# Java Studies
 
 ## Collection framework in java
 
