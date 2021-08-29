@@ -1,6 +1,6 @@
 # Java Studies
 
-- [Java Studies](https://github.com/lipegomes/java-studies/tree/master/maratona-java)
+- [Maratona Java](https://github.com/lipegomes/java-studies/tree/master/maratona-java)
 - [Object Oriented](https://github.com/lipegomes/java-studies/tree/master/object-oriented)
 
 ## Collection framework in java
