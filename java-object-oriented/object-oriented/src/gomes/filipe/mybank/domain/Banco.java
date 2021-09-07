@@ -1,27 +1,19 @@
 package gomes.filipe.mybank.domain;
 
 public class Banco {
-    String nomeBanco;
-    int idBanco;
+    private final String nomeBanco;
+    private final int agencia;
 
     public Banco(String nomeBanco, int idBanco) {
         this.nomeBanco = nomeBanco;
-        this.idBanco = idBanco;
+        this.agencia = idBanco;
     }
 
     public String getNomeBanco() {
         return nomeBanco;
     }
 
-    public void setNomeBanco(String nomeBanco) {
-        this.nomeBanco = nomeBanco;
-    }
-
     public int getIdBanco() {
-        return idBanco;
-    }
-
-    public void setIdBanco(int idBanco) {
-        this.idBanco = idBanco;
+        return agencia;
     }
 }

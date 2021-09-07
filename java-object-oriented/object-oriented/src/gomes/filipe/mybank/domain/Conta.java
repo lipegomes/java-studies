@@ -2,13 +2,15 @@ package gomes.filipe.mybank.domain;
 
 import java.text.NumberFormat;
 import java.util.Locale;
+import java.util.Random;
 
-public class Conta extends Banco {
-    String agencia;
-    String contaCorrente;
-    String nomeDoTitular;
-    String cpf;
-    double saldo;
+public abstract class Conta extends Banco {
+    private int agencia;
+    private static final Random numero = new Random();
+    private int conta = 1 + numero.nextInt(999999999);
+    private Cliente titular;
+    private static int total = 0;
+    protected double saldo;
 
     Locale localeBrazil = new Locale("pt", "BR");
 
@@ -16,42 +18,18 @@ public class Conta extends Banco {
         super(nomeBanco, idBanco);
     }
 
-    public Conta(String nomeBanco, int idBanco, String agencia, String contaCorrente, String nomeDoTitular, String cpf, double saldo) {
+    public Conta(String nomeBanco, int idBanco, int agencia) {
         super(nomeBanco, idBanco);
+        Conta.total++;
         this.agencia = agencia;
-        this.contaCorrente = contaCorrente;
-        this.nomeDoTitular = nomeDoTitular;
-        this.cpf = cpf;
-        this.saldo = saldo;
+        this.saldo = 0;
     }
 
-    @Override
-    public String toString() {
-        return "Conta{" +
-                "nomeBanco='" + nomeBanco + '\'' +
-                ", idBanco=" + idBanco +
-                ", agencia='" + agencia + '\'' +
-                ", contaCorrente='" + contaCorrente + '\'' +
-                ", nomeDoTitular='" + nomeDoTitular + '\'' +
-                ", cpf=" + cpf +
-                ", saldo=" + saldo +
-                '}';
-    }
-
-    public void deposita(double valor) {
-        this.saldo += valor;
-    }
-
-    public void depositaNaContaPoupanca(double valor, Conta contaPoupanca) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            contaPoupanca.deposita(valor);
-        }
-    }
+    public abstract void deposita(double valor);
 
     public boolean saca(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
+        if (saldo >= valor) {
+            saldo -= valor;
             return true;
         } else {
             return false;
@@ -59,50 +37,59 @@ public class Conta extends Banco {
     }
 
     public boolean transfere(double valor, Conta destino) {
-        if (this.saldo >= valor ) {
-            this.saldo -= valor;
+        if (this.saca(valor)) {
             destino.deposita(valor);
             return true;
         }
         return false;
     }
 
-    public void nomeBanco() {
-        System.out.println("Banco: " + nomeBanco);
+    public int getAgencia() {
+        return agencia;
     }
 
-    public void idBanco() {
-        System.out.println("Id banco: " + idBanco);
+    public void setAgencia(int agencia) {
+        if (agencia<= 0) {
+            System.out.println("O número da conta não pode ser menor ou igual a 0");
+            return;
+        }
+        this.agencia = agencia;
     }
 
-    public void agencia() {
-        System.out.println("Agência: " + agencia);
+    public int getConta() {
+        return conta;
     }
 
-    public void contaCorrente() {
-        System.out.println("Conta corrente: " + contaCorrente.substring(0, 9) + "-" + contaCorrente.charAt(10));
-
+    public void setConta(int conta) {
+        if (conta <= 0) {
+            System.out.println("O número da conta não pode ser menor ou igual a 0");
+            return;
+        }
+        this.conta = conta;
     }
 
-    public void nomeDoTitular() {
-        System.out.println("Nome do titular: " + nomeDoTitular);
+    public Cliente getTitular() {
+        return titular;
     }
 
-    public void cpf() {
-        System.out.println("CPF: " + cpf.substring(0, 3) + "." + cpf.substring(2, 5) + "." + cpf.substring(5, 8) + "-" + cpf.charAt(9) + cpf.charAt(10));
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
     }
 
-    public void saldo() {
-        System.out.println("Saldo: " + NumberFormat.getCurrencyInstance(localeBrazil).format(saldo));
+    public static int getTotal(){
+        return Conta.total;
     }
 
-    public void imprimeDadosDoCliente(String contaCorrente) {
-        System.out.println("--- Dados do Cliente ---");
-        System.out.println("Banco: " + nomeBanco);
-        System.out.println("Id banco: " + idBanco);
-        System.out.println("Agência: " + agencia);
-        System.out.println("Conta corrente: " + contaCorrente.substring(0, 9) + "-" + contaCorrente.charAt(10));
-        System.out.println("CPF: " + cpf.substring(0, 3) + "." + cpf.substring(2, 5) + "." + cpf.substring(5, 8) + "-" + cpf.charAt(9) + cpf.charAt(10));
-        System.out.println("Saldo: " + NumberFormat.getCurrencyInstance(localeBrazil).format(saldo));
+    public double getSaldo(){
+        return saldo;
+    }
+
+    @Override
+    public String toString() {
+        return  "Nome Banco: '" + getNomeBanco() + '\'' +
+                ", Id Banco: " + getIdBanco() +
+                ", Agência: '" + agencia + '\'' +
+                ", Conta Corrente: '" + String.valueOf(conta).substring(0, 7) + "-" + String.valueOf(conta).substring(8) + '\'' +
+                ", Saldo: " + NumberFormat.getCurrencyInstance(localeBrazil).format(saldo);
     }
 }
