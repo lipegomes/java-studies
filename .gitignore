@@ -22,7 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-/home/filipe/mydocs/dev/devdojo/basic-java-studies/java-object-oriented/object-oriented/.idea
-/home/filipe/mydocs/dev/devdojo/basic-java-studies/maratona-java/.idea
-java-object-oriented/.classpath
-java-object-oriented/.project
+/java-object-oriented/object-oriented/.idea
+/basic-java-studies/maratona-java/.idea
+/java-object-oriented/.classpath
+/java-object-oriented/.project
