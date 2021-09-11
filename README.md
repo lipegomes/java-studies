@@ -48,6 +48,7 @@ Source: [link](https://rollbar.com/wp-content/uploads/2021/07/java-exceptions-hi
 - [Java Exceptions Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/#)
 - [Exception Handling in Java](https://www.javatpoint.com/exception-handling-in-java)
 - [Tratamento de Exceções (Exceptions) ](https://youtu.be/kjQE7PT3pkM)
+- [How to use java stack with examples](https://ozenero.com/how-to-use-java-stack-with-examples)
 
 ## Tools used:
 
