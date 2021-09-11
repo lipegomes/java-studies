@@ -37,7 +37,20 @@ Source: [link](https://www.bigocheatsheet.com/)
 - [Introduction to Big O Notation and Time Complexity](https://www.youtube.com/watch?v=D6xkbGLQesk)
 - [Data Structures and Algorithms](https://www.youtube.com/watch?v=bum_19loj9A&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H)
 
+## Java Exceptions Hierarchy
+
+![Java-Collection-Framework-Hierarchy-2-874x1024.jpg](https://github.com/lipegomes/java-studies/blob/master/assets/img/java-exceptions-hierarchy.png)
+
+Source: [link](https://rollbar.com/wp-content/uploads/2021/07/java-exceptions-hierarchy-example.png)
+
+### References:
+
+- [Java Exceptions Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/#)
+- [Exception Handling in Java](https://www.javatpoint.com/exception-handling-in-java)
+- [Tratamento de Exceções (Exceptions) ](https://youtu.be/kjQE7PT3pkM)
+
 ## Tools used:
 
 - [Intellij Idea](https://www.jetbrains.com/idea/)
+- 
 - [Git](https://git-scm.com/)
