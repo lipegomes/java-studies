@@ -1,4 +1,4 @@
-package gomes.filipe.mybank.domain;
+package gomes.filipe.mybank.model;
 
 public class Banco {
     private final String nomeBanco;

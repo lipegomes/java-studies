@@ -1,11 +1,11 @@
-package gomes.filipe.mybank.domain;
+package gomes.filipe.mybank.model;
 
 import java.text.NumberFormat;
 
 public class ContaPoupanca extends Conta{
-    public ContaPoupanca(String nomeBanco, int idBanco, int agencia) {
+
+    public ContaPoupanca(String nomeBanco, int idBanco, int agencia){
         super(nomeBanco, idBanco, agencia);
-        System.out.println("Criado conta poupança de número " + String.valueOf(getConta()).substring(0, 7) + "-" + String.valueOf(getConta()).substring(8));
     }
 
     @Override

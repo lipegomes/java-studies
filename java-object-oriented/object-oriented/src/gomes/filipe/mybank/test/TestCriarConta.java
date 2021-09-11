@@ -1,11 +1,12 @@
 package gomes.filipe.mybank.test;
 
-import gomes.filipe.mybank.domain.ContaCorrente;
-import gomes.filipe.mybank.domain.ContaPoupanca;
+import gomes.filipe.mybank.model.ContaCorrente;
+import gomes.filipe.mybank.model.ContaPoupanca;
 
 public class TestCriarConta {
 
     public static void main(String[] args) {
+
 
         ContaCorrente cc1 = new ContaCorrente("Mercado Pago", 323, 1);
 

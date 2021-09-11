@@ -1,10 +1,10 @@
-package gomes.filipe.mybank.domain;
+package gomes.filipe.mybank.model;
 
-import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Random;
 
 public abstract class Conta extends Banco {
+
     private int agencia;
     private static final Random numero = new Random();
     private int conta = 1 + numero.nextInt(999999999);
@@ -82,14 +82,5 @@ public abstract class Conta extends Banco {
 
     public double getSaldo(){
         return saldo;
-    }
-
-    @Override
-    public String toString() {
-        return  "Nome Banco: '" + getNomeBanco() + '\'' +
-                ", Id Banco: " + getIdBanco() +
-                ", Agência: '" + agencia + '\'' +
-                ", Conta Corrente: '" + String.valueOf(conta).substring(0, 7) + "-" + String.valueOf(conta).substring(8) + '\'' +
-                ", Saldo: " + NumberFormat.getCurrencyInstance(localeBrazil).format(saldo);
     }
 }

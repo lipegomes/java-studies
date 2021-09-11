@@ -1,9 +1,16 @@
-package gomes.filipe.mybank.domain;
+package gomes.filipe.mybank.model;
 
 public class Cliente {
+
     private String nomeDoTitular;
     private String cpf;
     private String profissao;
+
+    public Cliente(String nomeDoTitular, String cpf, String profissao) {
+        this.nomeDoTitular = nomeDoTitular;
+        this.cpf = cpf;
+        this.profissao = profissao;
+    }
 
     public String getNomeDoTitular() {
         return nomeDoTitular;
@@ -27,5 +34,14 @@ public class Cliente {
 
     public void setProfissao(String profissao) {
         this.profissao = profissao;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nomeDoTitular='" + nomeDoTitular + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", profissao='" + profissao + '\'' +
+                '}';
     }
 }
