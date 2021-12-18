@@ -50,6 +50,22 @@ Source: [link](https://rollbar.com/wp-content/uploads/2021/07/java-exceptions-hi
 - [Tratamento de Exceções (Exceptions) ](https://youtu.be/kjQE7PT3pkM)
 - [How to use java stack with examples](https://ozenero.com/how-to-use-java-stack-with-examples)
 
+## Thread-Safety
+
+### References:
+
+- [Thread-Safe Java: Entendendo o conceito e usando em sua aplicação](https://www.geeksforgeeks.org/thread-safety-and-how-to-achieve-it-in-java/)
+
+- [Thread Safety and how to achieve it in Java](https://ozenero.com/)
+
+- [TWhat is Thread-Safety and How to Achieve it?](https://www.baeldung.com/java-thread-safety)
+
+- [Qual é o significado do termo "thread-safe"?](https://qastack.com.br/programming/261683/what-is-the-meaning-of-the-term-thread-safe)
+
+
+
+
+
 ## Tools used:
 
 - [Intellij Idea](https://www.jetbrains.com/idea/)
