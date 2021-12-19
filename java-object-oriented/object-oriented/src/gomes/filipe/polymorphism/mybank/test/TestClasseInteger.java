@@ -31,6 +31,16 @@ public class TestClasseInteger {
 		System.out.println("Valor minímo que um Integer pode guardar: " + Integer.MIN_VALUE);
 		System.out.println("Tamanho do Integer em bits: " + Integer.SIZE);
 		System.out.println("Tamanho do Integer em bytes: " + Integer.BYTES);
+		
+		
+		String diaEmFormtatoDeTexto = "1";
+		
+		// Parsing devolve um primitivo
+		int dia1 = Integer.parseInt(diaEmFormtatoDeTexto);
+		System.out.println(dia1);
+		// ValueOf devolve uma referência e em seguida ocorre um unboxing
+		int dia2 = Integer.valueOf(diaEmFormtatoDeTexto);
+		System.out.println(dia2);
 	}
 	
 
